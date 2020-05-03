@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Multiplayer Game</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.sound.min.js"></script>
+    <script src="p5.play.js"></script>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-database.js"></script>
+
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCY626nXIQ9BhlURmUrN6kPWttZyaRUYgc",
+    authDomain: "the-world-1b119.firebaseapp.com",
+    databaseURL: "https://the-world-1b119.firebaseio.com",
+    projectId: "the-world-1b119",
+    storageBucket: "the-world-1b119.appspot.com",
+    messagingSenderId: "308302492953",
+    appId: "1:308302492953:web:7900e713eee02f57cbc188",
+    measurementId: "G-6WP8Q4N5CN"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+
+    <script src="js/Player.js"></script>
+    <script src="js/Form.js"></script>
+    <script src="js/Game.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+  </head>
+  <body>
+    <script src="sketch.js"></script>
+    <div >
+    <div id='canvasContainer' width='100%'></div>
+    <div>
+      <button id='save'>Save</button>
+      <button id='clear'>Clear</button>
+      <ul id = 'drawingList'>Drawings</ul>
+    </div>
+    </div>
+    
+  </body>
+</html>
